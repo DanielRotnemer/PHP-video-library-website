@@ -31,7 +31,7 @@
         </div>
         <div class="body-wrapper">
             <div class="tollbar">
-                <div class="videos-count">Showing 33 videos.</div>
+                <div class="videos-count">Showing 81 videos.</div>
                 <div class="upload animated-transition">
                     <a class="noselect">Upload</a>
                 </div>
@@ -39,7 +39,7 @@
             <div class="videos-container">
 
                 <?php
-                    for ($i = 0; $i < 33; $i++)
+                    for ($i = 0; $i < 81; $i++)
                     {
                         echo '<a href="#">
                             <div class="video-item">
