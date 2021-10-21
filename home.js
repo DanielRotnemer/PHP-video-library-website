@@ -26,12 +26,15 @@ function resize()
     
     for (let i = 0; i < $(".video-item").length; i++)
     {        
-        if (i % itemsPerRow == 0) { 
+        // first video in every row
+        if (i % itemsPerRow == 0) {
             $($(".video-item")[i]).css("margin-left", shoulder + "px");
         }
+        // the first row
         if (i < itemsPerRow) {
             $($(".video-item")[i]).css("margin-top", "0px");
-        }  
+        }
+        // the first video in the last row
         if ($(".video-item").length - i == lastRowCount) {
             $($(".video-item")[i]).css("margin-left", lastRowMargin + "px");
         }
