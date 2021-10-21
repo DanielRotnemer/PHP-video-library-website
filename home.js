@@ -15,8 +15,8 @@ function resize()
     let itemsPerRow = (containerWidth - margin) / (videoItemWidth + margin);
     itemsPerRow = Math.floor(itemsPerRow);
 
-    var occupiedSpace = itemsPerRow * (videoItemWidth + margin) - margin;
-    var shoulder = (containerWidth - occupiedSpace) / 2;
+    let occupiedSpace = itemsPerRow * (videoItemWidth + margin) - margin;
+    let shoulder = (containerWidth - occupiedSpace) / 2;
     let lastRowCount = Math.floor($(".video-item").length / itemsPerRow);
     lastRowCount *= itemsPerRow;
     lastRowCount = $(".video-item").length - lastRowCount;
