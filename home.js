@@ -38,6 +38,7 @@ function resize()
     }
 }
 
+// wait for the resize event to end, then reposition the elements according to the window size
 function resizeEndded() 
 {
     if (new Date() - resizeTime < resizeDelta) {
